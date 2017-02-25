@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Fingers and Toes Assignment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<header>
-        <h1>Fingers and Toes Assignment</h1>
-</header>
+
 <body>
-	<div>
+	<div class= "header">
+        <h1>Fingers and Toes Assignment</h1>
+    </div>
+	<div class= "container">
 		<div>
-            <p>Enter the number of seconds to count :<p>
+            <p><b>Enter the number of seconds to count :</b></p>
 	<!--1. An input field that will take a number-->
-			<div class="time-block-input">
+			<div class= "counter1">
 				<input type="number" placeholder="Enter no of seconds" id="counter1-input"  width="100" min="1" max="100" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
 			</div>
 		</div>
@@ -32,21 +34,22 @@
                 <button onclick="resetCounter()" type="button">Reset</button>
             </div>
 		</section>
-		<section>
+		<section class="blocks">
 			<!--Counter Display-->
-			<div>
+			<div class="counter2">
 				<h1 id="counter2-input">0</h1>
 			</div>
 			<!--Fingers Block-->
-			<div id="fingers-block">
-				<p>Fingers</p>
+			<div class="fingers-box" id="fingers-block">
+				<p>FINGERS</p>
 			</div>
 			<!--Toes Block-->
-			<div id="toes-block">
-				<p>Toes</p>
+			<div class="toes-box" id="toes-block">
+				<p>TOES</p>
 			</div>
 		</section>
 	</div>
+	
 </body>
 <script src="script.js"></script>
 </html>
