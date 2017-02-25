@@ -15,7 +15,7 @@
 		<section>
 			<!--1. An input field that will take a number-->
             <div>
-                <input type="number" placeholder="Enter no of seconds" id="input-number"/>
+                <input type="number" placeholder="Enter no of seconds" id="input"  min="1" max="100" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
             </div>
 			<br/>
 			<!--Start button-->
@@ -45,4 +45,5 @@
 		</section>
 	</div>
 </body>
+<script src="script.js"></script>
 </html>
