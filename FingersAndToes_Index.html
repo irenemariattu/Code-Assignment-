@@ -11,13 +11,12 @@
 	<div>
 		<div>
             <p>Enter the number of seconds to count :<p>
+	<!--1. An input field that will take a number-->
+			<div class="time-block-input">
+				<input type="number" placeholder="Enter no of seconds" id="counter1-input"  width="100" min="1" max="100" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+			</div>
 		</div>
 		<section>
-			<!--1. An input field that will take a number-->
-            <div>
-                <input type="number" placeholder="Enter no of seconds" id="input"  min="1" max="100" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
-            </div>
-			<br/>
 			<!--Start button-->
             <div>
                 <button onclick="startCounter()" type="button" id="startCounter">Start</button>
@@ -34,12 +33,16 @@
             </div>
 		</section>
 		<section>
+			<!--Counter Display-->
+			<div>
+				<h1 id="counter2-input">0</h1>
+			</div>
 			<!--Fingers Block-->
-			<div id="fingers">
+			<div id="fingers-block">
 				<p>Fingers</p>
 			</div>
 			<!--Toes Block-->
-			<div id="toes">
+			<div id="toes-block">
 				<p>Toes</p>
 			</div>
 		</section>
